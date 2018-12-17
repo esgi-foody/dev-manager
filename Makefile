@@ -1,4 +1,4 @@
-GIT_ADDRESS=https://github.com/esgi-foody/foody
+GIT_ADDRESS=git@github.com:esgi-foody/foody.git
 
 uname_S := $(shell sh -c 'uname -s 2>/dev/null || echo not')
 ifeq ($(uname_S),Linux)
