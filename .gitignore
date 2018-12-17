@@ -1,0 +1,5 @@
+docker/data/
+hostess
+.idea/
+.DS_Store
+*~
