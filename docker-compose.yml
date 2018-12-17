@@ -22,10 +22,10 @@ services:
     ports:
       - 8000:80
     volumes:
-      - ../Foody:/var/www/foody
+      - ../Foody:/var/www/foody:cached
   foody:
     container_name: foody
     build: docker/php-fpm
     working_dir: /var/www/foody
     volumes:
-      - ../Foody:/var/www/foody
+      - ../Foody:/var/www/foody:cached
