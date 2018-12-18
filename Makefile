@@ -3,7 +3,7 @@ GIT_ADDRESS=git@github.com:esgi-foody/foody.git
 install :
 	mkdir -p docker/data
 	cd .. && git clone $(GIT_ADDRESS) Foody
-	cd ../Foody && composer install
+	cd ../Foody && composer install && yarn
 
 up :
 	docker-compose up --build
