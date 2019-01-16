@@ -6,7 +6,8 @@ install :
 	cd ../Foody && composer install && yarn && yarn encore dev
 
 up :
-	docker-compose up --build
+	docker-compose up --build -d
+	cd ../Foody && php bin/console server:run
 
 down : 
 	docker-compose down

@@ -16,16 +16,16 @@ services:
       - db
     ports:
       - 8001:8080
-  nginx:
-    container_name: nginx
-    build: docker/nginx
-    ports:
-      - 8000:80
-    volumes:
-      - ../Foody:/var/www/foody:cached
-  foody:
-    container_name: foody
-    build: docker/php-fpm
-    working_dir: /var/www/foody
-    volumes:
-      - ../Foody:/var/www/foody:cached
+  # nginx:
+  #   container_name: nginx
+  #   build: docker/nginx
+  #   ports:
+  #     - 8000:80
+  #   volumes:
+  #     - ../Foody:/var/www/foody:cached
+  # foody:
+  #   container_name: foody
+  #   build: docker/php-fpm
+  #   working_dir: /var/www/foody
+  #   volumes:
+  #     - ../Foody:/var/www/foody:cached
