@@ -1,8 +1,12 @@
 # dev-manager
 
-Install project at ../Foody and start docker containers
+Install and build project at ../Foody
 ```
 make install
+```
+
+Start containers
+```
 make up
 ```
 
