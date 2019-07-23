@@ -7,7 +7,7 @@ install :
 
 up :
 	docker-compose up --build -d
-	cd ../Foody && php bin/console server:run
+#	cd ../Foody && php bin/console server:run
 
-down : 
+down :
 	docker-compose down
